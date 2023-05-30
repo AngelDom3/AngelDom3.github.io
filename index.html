@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Incriptador de texto</title>
+ <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="proyecto.css">
+
+
+<meta name="viewport" content="width=device-width">
+
+  <link href="https://fonts.googleapis.com/css2?family=BioRhyme&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+     <header class="cabeza">
+       <img src="imagenes/Vector.png" >
+     </header>
+
+
+
+
+<body>
+  
+ 
+
+
+<main class="principal">
+   
+     <img width="23px" height="23px" src="imagenes/notificacion.png" class="notificacion-imagen">
+     <p class="notificacion">no usar caracteres especiales o mayúsculas para evitar errores</p>
+     <textarea  class="texto-principal" id="texto-principal" placeholder="&nbsp;ingrese el texto"></textarea>
+</textarea>
+     
+    
+ </main>
+
+ <div class="apartado">
+
+     <textarea  cols="23" rows="6" class="texto-apartado" id="texto-apartado" readonly></textarea>
+     <img  width="200px" height="200px" src="imagenes/Muñeco.png" class="imagen-apartado">
+     <input type="submit" class="boton-copiar" id="copiar-boton" value="COPIAR" >
+ </div>
+ 
+
+       <div   class="invisible">
+
+        <textarea   class="texto-invisible" id="texto-invisible" readonly></textarea>
+        <input type="submit" class="boton-invisible" id="boton-invisible" value="Copiar">
+        </div>
+
+   <img src="imagenes/Muñeco.png" class="mueñeco-invisible">
+
+
+<div class="boton"> 
+
+     <input type="submit" class="boton-encriptador"  value="ENCRIPTAR">
+     <input type="submit" class="boton-desencriptador" value="DESENCRIPTAR">
+ 
+</div>
+
+
+<script src="proyectoj.js">  </script>
+
+
+</body>
+</html>

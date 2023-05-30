@@ -1,0 +1,226 @@
+
+.cabeza{
+    margin: 20px;
+}
+body{
+   width:940px ;
+   height:940px ;
+    background: url(imagenes/peakpx.jpg);
+    
+    
+}
+
+.principal{
+ position: absolute;
+ top:80px; 
+ left: 220px;
+ 
+
+ width:500px;
+ height:200px;
+ 
+
+}
+.notificacion-imagen{
+display: inline;
+float: left;
+position: relative;
+bottom: 3px;
+}
+.notificacion{
+color: red ;
+font-size: 17px;
+
+}
+.texto-principal{
+    text-indent: 7em;
+    font-size:20px ;
+    border-radius: 20px;
+    border: 3px double #e1ede0;
+    background: #e1ede0;
+    width: 100%;
+    height: 100%;
+    
+ }
+.apartado{
+    width: 300px;
+    height: 600px;
+
+    position: absolute;
+    top:30px; 
+    right: 35px ;
+
+border-radius: 20px;
+border: 5px double #e1ede0;
+background: /*#e1ede0*/#af9ab0;
+background: url(imagenes/fondo-apartado.avif);
+
+}
+.texto-apartado{
+    font-size: 18px ;
+    font-family: "Space Mono";
+    display: block;
+    margin: 10px auto;
+    border-radius: 18px;
+    border: 3px double #af9ab0;
+    background: #e1ede0;
+}
+
+.imagen-apartado{
+   margin: 20px 50px 80px 50px;
+
+}
+.boton-copiar{
+  margin: 65px 40% 20px ;
+  font-family: 'BioRhyme', serif;
+  font-weight: bold;
+  color: white;
+  background: url(imagenes/boton-copiar3.jpg);
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 3px double #e1ede0
+}
+.boton-copiar:active{
+    
+
+}
+.boton{
+    position: absolute;
+    bottom: 60px;
+   left: 190px;
+
+   
+}
+.boton-encriptador{
+width: 200px;
+height: 40px;
+/*background: #006464 #64066b;*/
+background: url(imagenes/boton.jpg);
+font-weight: bold;
+font-family: 'BioRhyme', serif;
+ color: white ;
+ border-radius: 20px ;
+ border: 3px double #e1ede0;
+}
+.boton-encriptador:active{
+   
+    color:#000;
+    border: 3px double #f82e86;
+    font-size:15px;
+}
+.boton-desencriptador{
+    margin-left: 220px;
+    width: 200px;
+    height: 40px;
+    /*background: #48a3a7#7e0885;*/
+    background: url(imagenes/boton2.jpg);
+    font-weight: bold;
+    font-family: 'BioRhyme', serif;
+    color: white ;
+    border-radius: 20px ;
+    border: 3px double #e1ede0;
+}
+.boton-desencriptador:active {
+
+    color:#000;
+    border: 3px double #f82e86;
+    font-size:15px;
+}
+ /*para telefono*/
+
+ .invisible{
+    width: 500px ;
+    height: 150px;
+    opacity: 0;
+    position: relative;
+    left: 220px;
+    top: 280px;
+    
+    cursor:default;
+    
+ }
+ .texto-invisible{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 3px double #e1ede0;
+    background: #0c8676f5;
+
+    font-size:20px ;
+    font-family: "Space Mono";
+ }
+ .boton-invisible{
+    opacity: 0;
+    margin: 10px 10%  ;
+  font-family: 'BioRhyme', serif;
+  font-weight: bold;
+  color: white;
+  background: url(imagenes/boton-copiar3.jpg);
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 3px double #e1ede0
+
+ }
+ .mueñeco-invisible{
+    opacity: 0;
+   }
+
+
+
+@media screen and (max-width:939px) {
+     .texto-principal, .texto-invisible{
+         width: 100%;
+ 
+    
+    }
+
+
+      body{
+        background: url(imagenes/fondo-telefono2.jpg);
+        width: 100%;
+      }
+       .principal{
+        opacity: 1;
+        width: 100%;
+        position: relative;
+        top:20px;
+        left: 0px;
+       }
+       .texto-principal{
+        text-indent: 5em;
+       }
+       
+       .invisible{
+        opacity: 1;
+        width: 100%;
+        position: relative;
+        top:100px;
+        left: 0px;
+       }
+       .boton-invisible{
+        opacity: 1;
+       }
+       .mueñeco-invisible{
+        opacity: 1;
+       }
+      
+    .apartado{
+        display:none !important;
+    }
+    .boton{
+        margin: 0 auto;
+        width: 100%;
+       position: absolute;
+        bottom: 10px;
+       left: 0%;
+        
+    }
+    .boton-encriptador{
+      margin: 0 auto;
+    }
+    .boton-desencriptador{
+        margin: 0 auto;
+       
+    }
+}   
+ 
